@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+/* Normalization */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* End Normalization */
+
+/* Background */
+#speed {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+/* End Background */
+
+/* Logo */
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+}
+/* End Logo */
+
+/* The Flash Container */
+.the-flash {
+    position: relative;
+    left: -61px;
+    top: 93px;
+    width: 230px;
+    margin: 0 auto;
+    transform: rotate(-15deg);
+}
+/* End The Flash Container */
+
+/* Head */
+.head {
+    position: absolute;
+    top: 3px;
+    left: 18px;
+    width: 193px;
+    height: 164px;
+    margin-left: -3px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #cb1514;
+}
+
+.angry {
+    position: absolute;
+    top: -15px;
+    width: 50px;
+    height: 15px;
+    background-color: #cb1514;
+    transition: transform 0.3s ease;
+}
+
+.eyes {
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    top: 75px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 19px 5px, rgb(255, 255, 255), black 20%);
+    z-index: 2;
+}
+
+.eye-right {
+    right: 26px;
+}
+
+.eye-right .angry {
+    right: 0;
+    transform-origin: 50px 0;
+}
+
+.eye-left {
+    left: 22px;
+}
+
+.eye-left .angry {
+    left: 0;
+    transform-origin: 0 0;
+}
+
+.eye-bright-top {
+    position: relative;
+    top: 1px;
+    left: 12px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.masks {
+    position: relative;
+}
+
+.mask {
+    position: absolute;
+    top: 96px;
+    width: 0;
+    height: 0;
+    border-top: 28px solid #cb1514;
+    border-left: 71px solid transparent;
+    border-right: 71px solid transparent;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.mask-right {
+    right: -14px;
+}
+
+.mask-left {
+    left: -14px;
+}
+
+.skin {
+    position: absolute;
+    top: 106px;
+    left: 11px;
+    width: 169px;
+    height: 56px;
+    background-color: #f7a688;
+    border-bottom-left-radius: 37px;
+    border-bottom-right-radius: 37px;
+}
+
+.nose {
+    position: absolute;
+    top: 5px;
+    left: 76px;
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid rgba(228, 147, 117, 1);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.bolts {
+    position: relative;
+}
+
+.bolt {
+    position: absolute;
+    z-index: 1;
+    top: 64px;
+    width: 9px;
+    height: 40px;
+    background-color: #fff219;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.bolt-left {
+    left: -9px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.bolt-right {
+    right: -9px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.bolt-spike {
+    position: absolute;
+    top: -10px;
+    width: 5px;
+    height: 33px;
+    background-color: #fff219;
+}
+
+.bolt-left > .bolt-spike {
+    left: -5px;
+    border-top-left-radius: 5px;
+}
+
+.bolt-right > .bolt-spike {
+    right: -5px;
+    border-top-right-radius: 5px;
+}
+/* End Head */
+
+/* Body */
+.body {
+    position: absolute;
+    top: 165px;
+    left: 62px;
+    background-image: url('../images/svg/body.svg');
+    background-size: 100% 100%;
+    width: 103px;
+    height: 102px;
+}
+/* End Body */
+
+/* Bolt Shield */
+.bolt-shield {
+    position: absolute;
+    background-image: url('../images/svg/bolt.svg');
+    background-size: 100% 100%;
+    top: 15px;
+    left: 39px;
+    width: 28px;
+    height: 38px;
+}
+/* End Bolt Shield */
+
+/* Arms */
+.arms {
+    position: absolute;
+    background-size: 100% 100%;
+    top: 2px;
+    transform: rotate(-20deg);
+}
+
+.right-arm {
+    background-image: url('../images/svg/right_arm.svg');
+    right: 75px;
+    width: 75px;
+    height: 108px;
+    transform-origin: 65px 10px;
+}
+
+.left-arm {
+    background-image: url('../images/svg/left_arm.svg');
+    left: 76px;
+    width: 80px;
+    height: 107px;
+    transform-origin: 10px 10px;
+}
+/* End Arms */
+
+/* Legs */
+.legs {
+    position: absolute;
+    background-size: 100% 100%;
+    top: 76px;
+    z-index: -1;
+    transform: rotate(-20deg);
+}
+
+.right-leg {
+    background-image: url('../images/svg/right_leg.svg');
+    width: 80px;
+    height: 86px;
+    right: 57px;
+    transform-origin: 80px 10px;
+}
+
+.left-leg {
+    background-image: url('../images/svg/left_leg.svg');
+    width: 74px;
+    height: 86px;
+    left: 57px;
+    transform-origin: 2px 23px;
+}
+/* End Legs */
+
+/* Lightning */
+.lightning {
+    position: absolute;
+    background-image: url('../images/lightning_sprite.png');
+    width: 64px;
+    height: 120px;
+    background-size: 512px;
+    top: 167px;
+    visibility: hidden;
+}
+
+.lightning.left {
+    left: 40px;
+}
+
+.lightning.right {
+    right: 40px;
+    background-position: 0px 200px;
+}
+/* End Lightning */
+
+/* ========================= Animations ========================= */
+.eye {
+    animation-name: blink;
+    animation-duration: 5s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.head {
+    animation-name: vibrate;
+}
+
+.arms {
+    animation-name: arms;
+}
+
+.legs {
+    animation-name: legs;
+}
+
+.head, .arms, .legs {
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: 0s;
+}
+
+.the-flash:hover .head, .the-flash:hover .arms, .the-flash:hover .legs {
+    animation-duration: 0.01s;
+}
+
+.the-flash:hover .bolt-shield {
+    animation-name: taquions;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+
+.the-flash:hover .lightning {
+    animation: lightning 0.05ms infinite steps(8) 1s;
+}
+
+.the-flash:hover .eye-right .angry {
+    transform: rotate(-20deg);
+}
+
+.the-flash:hover .eye-left .angry {
+    transform: rotate(20deg);
+}
+/* ========================= End Animations ========================= */
+
+/* Keyframes */
+@keyframes blink {
+    97% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(89deg);
+    }
+}
+
+@keyframes vibrate {
+    50% {
+        margin-left: 5px;
+    }
+}
+
+@keyframes arms {
+    50% {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes legs {
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes taquions {
+    50% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes lightning {
+    100% {
+        visibility: visible;
+        background-position: -1024px 0px;
+    }
+}
+/* End Transitions */
